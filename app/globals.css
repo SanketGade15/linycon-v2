@@ -147,11 +147,11 @@ img {
   font-weight: 600;
 }
 
-.header nav > a:not(.button) {
+.header nav>a:not(.button) {
   position: relative;
 }
 
-.header nav > a:not(.button):after {
+.header nav>a:not(.button):after {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -162,7 +162,7 @@ img {
   transition: right 0.2s;
 }
 
-.header nav > a:hover:after {
+.header nav>a:hover:after {
   right: 0;
 }
 
@@ -257,9 +257,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(32px, 4.5vh, 56px) clamp(24px, 3.5vw, 60px)
-    clamp(28px, 4vh, 48px)
-    max(clamp(36px, 3.5vw, 60px), calc((100vw - var(--wrap-max, 1520px)) / 2));
+  padding: clamp(32px, 4.5vh, 56px) clamp(24px, 3.5vw, 60px) clamp(28px, 4vh, 48px) max(clamp(36px, 3.5vw, 60px), calc((100vw - var(--wrap-max, 1520px)) / 2));
   position: relative;
   min-height: 0;
   z-index: 2;
@@ -312,7 +310,7 @@ h1 em {
   color: var(--accent);
 }
 
-.hero-copy > p {
+.hero-copy>p {
   font-size: clamp(14px, 0.95vw, 15px);
   line-height: 1.72;
   color: #c5d5d3;
@@ -400,23 +398,19 @@ h1 em {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 24, 27, 0.04) 30%,
-    rgba(0, 25, 29, 0.84)
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 24, 27, 0.04) 30%,
+      rgba(0, 25, 29, 0.84));
 }
 
 .photo-grid {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(
-    90deg,
-    transparent 49.9%,
-    #ffffff14 50%,
-    transparent 50.1%
-  );
+  background: linear-gradient(90deg,
+      transparent 49.9%,
+      #ffffff14 50%,
+      transparent 50.1%);
   border-left: 1px solid #ffffff22;
   pointer-events: none;
 }
@@ -449,7 +443,7 @@ h1 em {
   z-index: 2;
 }
 
-.visual-bottom > span {
+.visual-bottom>span {
   font-size: 9px;
   letter-spacing: 0.14em;
   line-height: 2.2;
@@ -464,7 +458,7 @@ h1 em {
   color: #fff;
 }
 
-.visual-bottom > a {
+.visual-bottom>a {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   display: grid;
@@ -478,7 +472,7 @@ h1 em {
     color 0.2s;
 }
 
-.visual-bottom > a:hover {
+.visual-bottom>a:hover {
   background: var(--accent);
   color: var(--teal);
 }
@@ -530,19 +524,13 @@ h1 em {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(
-      90deg,
-      rgba(4, 15, 18, 0.88) 0%,
-      rgba(4, 15, 18, 0.74) 42%,
-      rgba(4, 15, 18, 0.3) 75%,
-      rgba(4, 15, 18, 0.12) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(4, 15, 18, 0.45) 0%,
-      rgba(4, 15, 18, 0.12) 50%,
-      rgba(4, 15, 18, 0.55) 100%
-    );
+    linear-gradient(90deg,
+      rgba(4, 15, 18, 0.52) 42%,
+      rgba(4, 15, 18, 0.18) 75%,
+      rgba(4, 15, 18, 0.04) 100%),
+    linear-gradient(180deg,
+      rgba(4, 15, 18, 0.05) 50%,
+      rgba(4, 15, 18, 0.38) 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -564,6 +552,7 @@ h1 em {
   color: #ffffff;
   margin: 0 0 clamp(24px, 3.4vh, 32px);
   max-width: 780px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
 }
 
 .hero-banner-title em {
@@ -574,10 +563,11 @@ h1 em {
 .hero-banner-lead {
   font-size: clamp(14.5px, 1.05vw, 16.5px);
   line-height: 1.72;
-  color: rgba(235, 242, 240, 0.92);
+  color: rgba(240, 246, 244, 0.96);
   max-width: 680px;
   margin: 0 0 clamp(32px, 4.6vh, 44px);
   font-weight: 400;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hero-banner-actions {
@@ -652,16 +642,19 @@ h1 em {
   .hero-banner-content {
     padding-block: clamp(14px, 2.2vh, 24px);
   }
+
   .hero-banner-title {
     font-size: clamp(28px, 5.2vh, 38px);
     margin-bottom: clamp(18px, 2.8vh, 24px);
   }
+
   .hero-banner-lead {
     font-size: clamp(12.5px, 1.8vh, 14.5px);
     line-height: 1.58;
     margin-bottom: clamp(24px, 3.6vh, 32px);
     max-width: 680px;
   }
+
   .banner-btn {
     font-size: 12.5px;
     padding: 10px 18px;
@@ -676,14 +669,17 @@ h1 em {
     max-height: none;
     scroll-margin-top: 65px;
   }
+
   .hero-banner-content {
     width: min(1280px, calc(100% - 64px));
     padding-block: 54px;
   }
+
   .hero-banner-title {
     font-size: clamp(32px, 5.5vw, 44px);
     margin-bottom: 20px;
   }
+
   .hero-banner-lead {
     font-size: 14px;
     margin-bottom: 28px;
@@ -696,24 +692,29 @@ h1 em {
     min-height: calc(100dvh - 61px);
     scroll-margin-top: 61px;
   }
+
   .hero-banner-content {
     width: calc(100% - 40px);
     padding-block: 44px;
   }
+
   .hero-banner-title {
     font-size: clamp(26px, 7.5vw, 34px);
     margin-bottom: 18px;
   }
+
   .hero-banner-lead {
     font-size: 13.5px;
     line-height: 1.6;
     margin-bottom: 26px;
   }
+
   .hero-banner-actions {
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
   }
+
   .banner-btn {
     justify-content: center;
     width: 100%;
@@ -875,7 +876,7 @@ a[download].button:active span,
   margin-bottom: 18px;
 }
 
-.section-top > p {
+.section-top>p {
   font-size: 13px;
   color: var(--muted);
   line-height: 1.8;
@@ -883,7 +884,7 @@ a[download].button:active span,
   max-width: 335px;
 }
 
-.solutions .section-top > p {
+.solutions .section-top>p {
   color: var(--ink);
   font-weight: 500;
   font-size: clamp(14px, 1.05vw, 15.5px);
@@ -891,7 +892,7 @@ a[download].button:active span,
   max-width: 380px;
 }
 
-.section-top > .text-link {
+.section-top>.text-link {
   margin-bottom: 6px;
 }
 
@@ -1019,7 +1020,7 @@ a[download].button:active span,
   border-color: #b8c9bc;
 }
 
-.card-link > span {
+.card-link>span {
   font-size: 21px;
   font-weight: 400;
   color: #5ea01a;
@@ -1028,11 +1029,11 @@ a[download].button:active span,
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.solution-card:hover .card-link > span {
+.solution-card:hover .card-link>span {
   transform: translate(5px, -5px);
 }
 
-.solution-card:active .card-link > span {
+.solution-card:active .card-link>span {
   transform: translate(2px, -2px);
 }
 
@@ -1183,11 +1184,9 @@ a[download].button:active span,
 .project-image-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(5, 25, 28, 0.04) 40%,
-    rgba(5, 25, 28, 0.52) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(5, 25, 28, 0.04) 40%,
+      rgba(5, 25, 28, 0.52) 100%);
   pointer-events: none;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -1293,7 +1292,7 @@ a[download].button:active span,
   color: var(--accent);
 }
 
-.approach .section-top > p {
+.approach .section-top>p {
   color: #d8eae6;
   font-size: clamp(14px, 1.05vw, 15.5px);
   font-weight: 500;
@@ -1333,7 +1332,7 @@ a[download].button:active span,
   transform: scaleX(1);
 }
 
-.process-grid article > span {
+.process-grid article>span {
   font-family: var(--font-manrope), Arial, sans-serif;
   color: var(--accent);
   font-size: 30px;
@@ -1343,7 +1342,7 @@ a[download].button:active span,
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.process-grid article:hover > span {
+.process-grid article:hover>span {
   transform: translateY(-2px);
 }
 
@@ -1389,7 +1388,7 @@ a[download].button:active span,
   color: #fff;
 }
 
-.approach-bottom > a {
+.approach-bottom>a {
   margin-left: auto;
 }
 
@@ -1443,7 +1442,7 @@ a[download].button:active span,
   height: 100%;
 }
 
-.contact-copy > p {
+.contact-copy>p {
   font-size: clamp(15.5px, 1.15vw, 17px);
   color: #1c3833;
   line-height: 1.68;
@@ -1511,7 +1510,7 @@ a[download].button:active span,
   margin-top: 22px;
 }
 
-.contact-details > div > span {
+.contact-details>div>span {
   font-size: 11.5px;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -1593,7 +1592,7 @@ form h3 {
   color: #072e33;
 }
 
-form > p {
+form>p {
   font-size: 13px;
   color: #556c66;
   margin-bottom: 22px;
@@ -1610,7 +1609,7 @@ label {
   margin-bottom: 22px;
 }
 
-label > span {
+label>span {
   color: #5ea01a;
   margin-left: 2px;
 }
@@ -1737,7 +1736,7 @@ footer {
   padding-block: 42px 30px;
 }
 
-.footer-top > p {
+.footer-top>p {
   font-size: 13.5px;
   line-height: 1.6;
   color: #1a3c36;
@@ -1746,7 +1745,7 @@ footer {
   max-width: 340px;
 }
 
-.footer-top > .text-link {
+.footer-top>.text-link {
   margin-left: auto;
   font-size: 14px;
   font-weight: 700;
@@ -1761,18 +1760,18 @@ footer {
     border-color 0.2s ease;
 }
 
-.footer-top > .text-link:hover {
+.footer-top>.text-link:hover {
   color: #5ea01a;
   border-color: #5ea01a;
 }
 
-.footer-top > .text-link span {
+.footer-top>.text-link span {
   display: inline-block;
   font-size: 16px;
   transition: transform 0.25s ease;
 }
 
-.footer-top > .text-link:hover span {
+.footer-top>.text-link:hover span {
   transform: translateY(3px);
 }
 
@@ -2084,7 +2083,7 @@ dialog::backdrop {
     gap: 8px;
   }
 
-  .hero-copy > p {
+  .hero-copy>p {
     font-size: 13px;
   }
 
@@ -2115,13 +2114,13 @@ dialog::backdrop {
     font-size: 19px;
   }
 
-  .visual-bottom > a {
+  .visual-bottom>a {
     height: 36px;
     width: 36px;
     font-size: 22px;
   }
 
-  .visual-bottom > span {
+  .visual-bottom>span {
     font-size: 7px;
   }
 
@@ -2188,7 +2187,7 @@ dialog::backdrop {
     gap: 30px;
   }
 
-  .section-top > p {
+  .section-top>p {
     font-size: 11px;
     max-width: 235px;
   }
@@ -2230,7 +2229,7 @@ dialog::backdrop {
     gap: 16px;
   }
 
-  .contact-copy > p {
+  .contact-copy>p {
     font-size: 12px;
   }
 
@@ -2238,7 +2237,7 @@ dialog::backdrop {
     gap: 30px;
   }
 
-  .footer-top > p {
+  .footer-top>p {
     font-size: 10px;
   }
 }
@@ -2297,7 +2296,7 @@ dialog::backdrop {
     margin-bottom: 16px;
   }
 
-  .hero-copy > p {
+  .hero-copy>p {
     font-size: 14px;
     max-width: 340px;
     margin-bottom: 25px;
@@ -2343,11 +2342,11 @@ dialog::backdrop {
     font-size: 25px;
   }
 
-  .visual-bottom > span {
+  .visual-bottom>span {
     font-size: 8px;
   }
 
-  .visual-bottom > a {
+  .visual-bottom>a {
     height: 42px;
     width: 42px;
   }
@@ -2427,7 +2426,7 @@ dialog::backdrop {
     margin-bottom: 32px;
   }
 
-  .section-top > p {
+  .section-top>p {
     font-size: 12px;
     max-width: 320px;
   }
@@ -2536,7 +2535,7 @@ dialog::backdrop {
     gap: 15px;
   }
 
-  .approach-bottom > a {
+  .approach-bottom>a {
     margin: 8px 0 0 53px;
   }
 
@@ -2544,7 +2543,7 @@ dialog::backdrop {
     gap: 35px;
   }
 
-  .contact-copy > p {
+  .contact-copy>p {
     font-size: 13px;
   }
 
@@ -2572,11 +2571,11 @@ dialog::backdrop {
     padding-block: 30px;
   }
 
-  .footer-top > p {
+  .footer-top>p {
     margin-left: auto;
   }
 
-  .footer-top > .text-link {
+  .footer-top>.text-link {
     margin-left: 0;
   }
 
@@ -2590,7 +2589,7 @@ dialog::backdrop {
     align-items: flex-start;
   }
 
-  .footer-bottom > span {
+  .footer-bottom>span {
     max-width: 190px;
   }
 
@@ -2618,7 +2617,7 @@ dialog::backdrop {
   margin-bottom: clamp(14px, 2.2vh, 22px);
 }
 
-.hero-copy > p {
+.hero-copy>p {
   max-width: 410px;
   font-size: clamp(14px, 0.95vw, 15px);
   line-height: 1.72;
@@ -2658,7 +2657,7 @@ dialog::backdrop {
     margin-bottom: 6px;
   }
 
-  .hero-copy > p {
+  .hero-copy>p {
     font-size: 11.5px;
     line-height: 1.45;
     margin-bottom: 8px;
@@ -2725,7 +2724,7 @@ dialog::backdrop {
   gap: 30px;
 }
 
-.logo-grid > div {
+.logo-grid>div {
   height: 88px;
   display: flex;
   align-items: center;
@@ -2794,7 +2793,7 @@ dialog::backdrop {
   border-bottom: 1px solid #c9d5cd;
 }
 
-.why-list li > span {
+.why-list li>span {
   font-family: var(--font-manrope), Arial, sans-serif;
   font-size: 15px;
   font-weight: 800;
@@ -2830,7 +2829,7 @@ dialog::backdrop {
     gap: 18px;
   }
 
-  .logo-grid > div {
+  .logo-grid>div {
     padding-inline: 10px;
   }
 
@@ -2849,7 +2848,7 @@ dialog::backdrop {
     font-size: clamp(26px, 3.5vw, 36px);
   }
 
-  .hero-copy > p {
+  .hero-copy>p {
     font-size: 12px;
     line-height: 1.65;
   }
@@ -2867,7 +2866,7 @@ dialog::backdrop {
     gap: 8px;
   }
 
-  .logo-grid > div {
+  .logo-grid>div {
     height: 76px;
     padding-inline: 8px;
   }
@@ -2909,7 +2908,7 @@ dialog::backdrop {
     font-size: clamp(24px, 7vw, 32px);
   }
 
-  .hero-copy > p {
+  .hero-copy>p {
     font-size: 13px;
   }
 
@@ -2967,7 +2966,7 @@ dialog::backdrop {
     gap: 12px;
   }
 
-  .logo-grid > div {
+  .logo-grid>div {
     padding: 12px 20px;
     height: 80px;
   }
@@ -2977,7 +2976,7 @@ dialog::backdrop {
     max-width: 160px;
   }
 
-  .logo-grid > div:last-child {
+  .logo-grid>div:last-child {
     grid-column: 1/-1;
     max-width: 200px;
     width: 100%;
@@ -3031,7 +3030,7 @@ dialog::backdrop {
     gap: 12px 18px;
   }
 
-  .footer-top > p {
+  .footer-top>p {
     max-width: 280px;
     font-size: 13px;
   }
