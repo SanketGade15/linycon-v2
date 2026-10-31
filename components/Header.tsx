@@ -47,8 +47,8 @@ export default function Header() {
             <Image
               src="/assets/linycon_emblem.png"
               alt=""
-              width={30}
-              height={48}
+              width={28}
+              height={44}
             />
             <span>
               <b>LINYCON</b>

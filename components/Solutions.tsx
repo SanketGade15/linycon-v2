@@ -11,7 +11,9 @@ export default function Solutions() {
         <div className="section-top">
           <div>
             <div className="eyebrow teal">02 / OUR SERVICES</div>
-            <h2>Our Areas of Operation</h2>
+            <h2>
+              Our Areas <em>of Operation</em>
+            </h2>
           </div>
           <p>
             Electrical, illumination and infrastructure services,

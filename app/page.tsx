@@ -79,9 +79,42 @@ export default function HomePage() {
             <span className="visual-index">01 / INFRASTRUCTURE</span>
           </div>
         </section>
+        <section className="hero-banner" id="hero-banner">
+          <Image
+            className="hero-banner-bg"
+            src="/assets/hero_highway.jpg"
+            alt="Illuminated highway and connected road infrastructure at night"
+            fill
+            priority
+            sizes="100vw"
+          />
+          <div className="hero-banner-overlay" aria-hidden="true" />
+          <div className="wrap hero-banner-content">
+            <h2 className="hero-banner-title">
+              Electrical, Illumination &amp;
+              <br />
+              <em>Infrastructure Solutions</em>
+            </h2>
+            <p className="hero-banner-lead">
+              From site surveys and electrical system design to project
+              execution, testing and commissioning, Linycon Private Limited
+              delivers integrated solutions for electrical, illumination and
+              infrastructure projects.
+            </p>
+            <div className="hero-banner-actions">
+              <a className="banner-btn banner-btn-lime" href="#contact">
+                Discuss Your Project <span aria-hidden="true">&rarr;</span>
+              </a>
+              <a className="banner-btn banner-btn-glass" href="#solutions">
+                Explore Our Services
+              </a>
+            </div>
+          </div>
+        </section>
         <div className="capability-strip">
           <div className="wrap">
-            <p>ONE INTEGRATED PARTNER</p>
+            <span>One integrated partner</span>
+            <i aria-hidden="true">+</i>
             <span>Survey & design</span>
             <i aria-hidden="true">+</i>
             <span>Engineering & execution</span>
@@ -90,14 +123,16 @@ export default function HomePage() {
           </div>
         </div>
         <section className="section wrap about" id="about">
-          <div>
+          <div className="about-left">
             <div className="eyebrow teal">01 / ABOUT US</div>
             <h2>
               Engineering Excellence
               <br />
-              from Concept
-              <br />
-              to Commissioning
+              <em>
+                from Concept
+                <br />
+                to Commissioning
+              </em>
             </h2>
           </div>
           <div className="about-copy">
@@ -123,7 +158,7 @@ export default function HomePage() {
               commissioning.
             </p>
             <a
-              className="text-link"
+              className="button dark"
               href="/assets/linycon-company-profile.pdf"
               download
             >
@@ -140,7 +175,7 @@ export default function HomePage() {
                 <h2>
                   Integrated Engineering
                   <br />
-                  Capabilities
+                  <em>Capabilities</em>
                 </h2>
               </div>
               <p>
@@ -193,7 +228,7 @@ export default function HomePage() {
                 <br />
                 <b>From concept to commissioning.</b>
               </p>
-              <a href="#contact" className="text-link light">
+              <a href="#contact" className="button outline">
                 Work with our team <span aria-hidden="true">↗</span>
               </a>
             </div>
@@ -246,17 +281,18 @@ export default function HomePage() {
         </section>
         <section className="why-section section" id="why-us">
           <div className="wrap why-layout">
-            <div>
+            <div className="why-copy">
               <div className="eyebrow teal">
                 05 / WHY LINYCON PRIVATE LIMITED?
               </div>
               <h2>
                 A Complete Approach
                 <br />
-                to Electrical &<br />
-                Illumination Projects
+                to Electrical &amp;
+                <br />
+                <em>Illumination Projects</em>
               </h2>
-              <a className="text-link" href="#contact">
+              <a className="button dark" href="#contact">
                 Discuss your requirements <span aria-hidden="true">↗</span>
               </a>
             </div>
@@ -306,7 +342,7 @@ export default function HomePage() {
             <h2>
               Let's Discuss
               <br />
-              Your Next Project
+              <em>Your Next Project</em>
             </h2>
             <p>
               Looking for electrical, illumination or infrastructure project
